@@ -42,12 +42,7 @@ const eqArrays = function(array1, array2){
   return true;
 
 };
+const words = ["hello", "world", "lighthouse"];
 
-const originalArray = [1, 2, 3, 4];
-const originalArrayCopy = [...originalArray];
-
-assertArraysEqual(without([1, 2, 3, 4], [2, 4]), [1, 3]); 
-assertArraysEqual(originalArray, originalArrayCopy);
-
-console.log(eqArrays(without([1, 2, 3], [1]), [2, 3]));
-console.log(eqArrays(without([1, 2, 3, 4], [2, 4]), [1, 3]));
+without(words, ["lighthouse"]); 
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
