@@ -9,11 +9,3 @@ describe("#head", () => {
     assert.strictEqual(head(['5']), '5'); 
   });
 });
-
-const testHead = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅ Test Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑 Test Failed: ${actual} !== ${expected}`);
-  }
-};
