@@ -1,6 +1,8 @@
 const tail = require("../tail");
-const assertEqual = require("../assertEqual");
+
 // Test Case: Check the original array
 const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it'assert Equal(words.length, 3); // original array should still have 3 elements!
-assertEqual(words.length, 3); // original array should still have 3 elements!
+console.log(tail(words));  // Should print ["Lighthouse", "Labs"]
+
+// Check if the original array remains unchanged
+console.log(words.length);  // Should print 3, as the original array should still have 3 elements
