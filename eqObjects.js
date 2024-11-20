@@ -56,8 +56,10 @@ const longSleeveMultiColorShirtObject = {
 
 assertEqual(eqObjects(shirtObject, anotherShirtObject), true);
 assertEqual(eqObjects(shirtObject, longSleeveShirtObject), false);
-assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true); // Arrays should match
-assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false); // Extra key in second object
+assertEqual(eqObjects(multiColorShirtObject, anotherMultiColorShirtObject), true); 
+assertEqual(eqObjects(multiColorShirtObject, longSleeveMultiColorShirtObject), false); 
+
+module.exports = eqObjects;
 
 
 

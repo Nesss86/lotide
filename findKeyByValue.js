@@ -40,3 +40,5 @@ assertEqual(findKeyByValue(bestTVShowsByGenre, "the expanse"), undefined); // Sh
 // Add failing cases:
 assertEqual(findKeyByValue(bestMovies, "Titanic"), "movie1"); // Should fail (Titanic is under movie2)
 assertEqual(findKeyByValue(bestTVShowsByGenre, "The Expanse"), "comedy"); // Should fail (The Expanse is under sci_fi)
+
+module.exports = findKeyByValue;

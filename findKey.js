@@ -59,3 +59,5 @@ assertEqual(
   ),
   "a"
 );
+
+module.exports = findKey;

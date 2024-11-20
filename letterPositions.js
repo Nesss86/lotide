@@ -66,3 +66,5 @@ console.log(assertArraysEqual(letterPositionsResult["o"], expectedResult["o"]));
 
 
 console.log(letterPositionsResult);
+
+module.exports = letterPositions;
